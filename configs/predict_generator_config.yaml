@@ -1,0 +1,11 @@
+model: TheBloke/Mixtral-8x7B-Instruct-v0.1-GPTQ  # LeoLM/leo-mistral-hessianai-7b-chat, TheBloke/leo-hessianai-70B-chat-AWQ, dmitrii/models/mistral_finetuned, dmitrii/models/mistral_finetuned_completion_only, TheBloke/Mixtral-8x7B-Instruct-v0.1-GPTQ
+use_context: True
+input: dmitrii/results/retriever_predictions
+output: dmitrii/results/generator_predictions_mixtral  # dmitrii/results/generator_predictions_mistral, generator_predictions_llama, generator_predictions_mistral_finetuned, dmitrii/results/generator_predictions_mistral_finetuned_completion_only
+top_p: 0.95
+max_new_tokens: 250
+temperature: 0.7
+sagemaker_instance: ml.g5.12xlarge  # ml.g5.2xlarge, ml.g5.12xlarge
+bucket_name: tcr-internal
+evaluator_model: gpt-3.5-turbo-1106
+use_flash_attention_2: False

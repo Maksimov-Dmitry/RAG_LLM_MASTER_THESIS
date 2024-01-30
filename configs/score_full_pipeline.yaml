@@ -1,0 +1,3 @@
+bucket_name: tcr-internal
+data: dmitrii/results/generator_predictions_mistral
+evaluator_model: gpt-3.5-turbo-1106

@@ -1,0 +1,14 @@
+model_input_name: intfloat/multilingual-e5-large
+model_output_name: dmitrii/models/retriever-e5-finetuned
+model_output_local_path: models/retriever-e5-finetuned
+input_data_local: data/processed/dataset
+output_data_s3: dmitrii/data
+query_prefix: "query: "
+doc_prefix: "passage: "
+batch_size: 8
+epochs: 10
+chromadb_path: data/db
+collection_name: texts_e5
+top_k: 3
+sagemaker_instance: ml.g5.2xlarge
+bucket_name: tcr-internal

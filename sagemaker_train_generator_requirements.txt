@@ -1,0 +1,9 @@
+marshmallow-dataclass==8.5.14
+omegaconf==2.3.0
+bitsandbytes==0.41.3.post2
+transformers==4.36.2
+accelerate
+peft==0.7.1
+datasets[s3]==2.16.1
+trl==0.7.7
+wandb

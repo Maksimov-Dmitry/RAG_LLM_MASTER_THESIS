@@ -1,0 +1,8 @@
+marshmallow-dataclass==8.5.14
+omegaconf==2.3.0
+torch>=2.0.1
+transformers>=4.36.2
+sentencepiece==0.1.99
+accelerate
+datasets[s3]==2.16.1
+tqdm

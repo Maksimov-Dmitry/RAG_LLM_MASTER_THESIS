@@ -3,7 +3,6 @@ from utils.peek import ChromaPeek
 
 st.set_page_config(page_title="Embeddings",
                    layout="wide",
-                   page_icon='👀'
                    )
 
 st.title("Chroma")

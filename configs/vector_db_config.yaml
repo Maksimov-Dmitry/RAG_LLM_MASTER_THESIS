@@ -1,9 +1,9 @@
-embedding_model: clip-ViT-B-32  # Cohere/Cohere-embed-multilingual-v3.0, clip-ViT-B-32
-input_path: data/raw  # data/interim, data/raw
+embedding_model: models/retriever-e5-finetuned  # Cohere/Cohere-embed-multilingual-v3.0, clip-ViT-B-32
+input_path: data/interim  # data/interim, data/raw
 db_path: data/db
-collection_name: images_clip  # texts_cohere, texts_e5, images_clip
+collection_name: texts_e5_finetuned  # texts_cohere, texts_e5, images_clip
 distance_metric: cosine
-embeddings: clip  # text, clip
+embeddings: text  # text, clip
 text_embeddings:
   use_tables: False
   max_tokens: 512

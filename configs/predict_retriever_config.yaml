@@ -1,0 +1,12 @@
+input: data/processed/dataset
+output: results/retriever_predictions_e5_finetuned
+model_name: models/retriever-e5-finetuned  # models/retriever-e5-finetuned, embed-multilingual-v3.0, intfloat/multilingual-e5-large
+batch_size: 16
+prefix: 'query: '
+max_length: 512
+chromadb_path: data/db
+collection_name: texts_e5_finetuned  # texts_e5_finetuned, texts_cohere, texts_e5, images_clip,
+top_k: 3
+evaluator_model: Null  # gpt-3.5-turbo-1106
+bucket_name: tcr-internal
+output_data_s3: dmitrii/${output}

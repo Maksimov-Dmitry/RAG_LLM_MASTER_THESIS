@@ -35,6 +35,8 @@ class ChromaPeek:
         elif collection_name == 'texts_cohere' and self.model is None:
             load_dotenv()
             self.co = cohere.Client(os.getenv('COHERE_API_KEY'))
+        elif collection_name == 'texts_e5_finetuned' and self.model is None:
+            self.model = SentenceTransformer('models/retriever-e5-finetuned')
         elif self.model is None:
             self.model = SentenceTransformer('intfloat/multilingual-e5-large')
         if collection_name == 'texts_cohere':

@@ -1,4 +1,4 @@
-transformers==4.35.2
+transformers==4.36.2
 jupyter
 click==8.1.7
 torch==2.1.0
@@ -18,11 +18,23 @@ matplotlib==3.8.2
 PyMuPDF==1.23.6
 tqdm==4.66.1
 Pillow==9.5.0
-transformers==4.35.2
 marshmallow-dataclass==8.5.14
 omegaconf==2.3.0
 hydra-core==1.3.2
 sentence-transformers==2.2.2
 cohere
+ragas==0.0.22
+lightning==2.1.2
+langchain==0.0.353
+huggingface-hub==0.20.1
+aim==3.17.5
+sagemaker==2.197.0
+datasets[s3]==2.16.1
+ragas==0.0.22
+trl==0.7.7
+peft==0.7.1
+rouge_score
+huggingface-hub
+llama-cpp-python
 # wheel==0.41.3
 # flash-attn==2.3.4 --no-build-isolation
