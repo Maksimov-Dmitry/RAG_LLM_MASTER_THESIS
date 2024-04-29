@@ -175,3 +175,13 @@ You can see the results of the experiments using Aim. To run Aim, run:
 ```bash
 aim up
 ```
+
+## Query-Answering System Application
+
+You can run the Streamlit app to interact with the QA system. To run the app, run:
+
+```bash
+streamlit run chroma_ui_streamlit/main.py
+```
+
+If you want to add models, you can add them in the chroma_ui_streamlit/pages/2_rag.py file.
