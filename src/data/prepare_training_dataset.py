@@ -4,7 +4,6 @@ from datasets import load_from_disk
 import chromadb
 import boto3
 import tempfile
-import json
 
 
 def _get_doc_ids(example, collection):

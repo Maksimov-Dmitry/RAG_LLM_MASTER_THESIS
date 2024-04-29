@@ -89,7 +89,6 @@ target/
 .mypy_cache/
 .venv
 outputs/
-.aim/
 lightning_logs/
 models/
 results/

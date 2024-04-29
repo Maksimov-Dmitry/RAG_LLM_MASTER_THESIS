@@ -7,7 +7,7 @@ import pandas as pd
 from llama_cpp import Llama
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import torch
-load_dotenv()
+load_dotenv(override=True)
 
 PATH = "data/db"
 peeker = ChromaPeek(PATH)

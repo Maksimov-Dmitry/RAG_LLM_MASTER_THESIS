@@ -118,7 +118,7 @@ def train_retriever_command(cfg: DictConfig):
         instance_type=params.sagemaker_instance,
         instance_count=1,
         job_name_prefix='retriever-training',
-        dependencies='sagemaker_requirements.txt',
+        dependencies='sagemaker_train_retriver_requirements.txt',
         include_local_workdir=True,
         role='arn:aws:iam::185705041424:role/SageMakerRole',
     ) as e:
